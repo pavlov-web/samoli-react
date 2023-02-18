@@ -1,0 +1,34 @@
+$white: #fff;
+$black: #071108;
+$dark: #0d1321;
+$gray: #626e7a;
+$gray-light: #edf2f4;
+$green: #72e1d1;
+$green-dark: #23c2a9;
+$green-light: #8ddad5;
+$red: #ff0844;
+$red-dark: #ff0844;
+$red-light: #ffb199;
+
+$gradient-white: radial-gradient(100% 100% at 100% 0%, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+$gradient-red: linear-gradient(90deg, $red-dark 0%, $red-light 100%);
+$gradient-turquoise: linear-gradient(90deg, $green-dark 0%, $green-light 100%);
+
+$gradient-red-light: radial-gradient(
+  150.42% 131.78% at 200.42% -76.34%,
+  rgba(239, 35, 60, 1) 0%,
+  rgba(255, 255, 255, 0.6) 100%
+);
+$gradient-turquoise-light: linear-gradient(78.83deg, rgba(114, 225, 209, 0.3) 0%, rgba(237, 242, 244, 0.3) 100%);
+
+$round: vw(20px);
+
+$shadow-bid: vw(0px) vw(20px) vw(40px) rgba(7, 17, 8, 0.2);
+$shadow-medium: vw(0px) vw(30px) vw(40px) rgba(0, 0, 0, 0.1);
+$shadow-turquoise: vw(0px) vw(20px) vw(40px) rgba(114, 225, 209, 0.5);
+
+$btn-shadow-white: 0 vw(20px) vw(40px) rgba(10, 9, 3, 0.2);
+$btn-shadow-gray: 0 vw(20px) vw(40px) rgba(7, 17, 8, 0.2);
+$btn-shadow-green: 0 vw(20px) vw(40px) rgba(114, 225, 209, 0.5);
+
+$transition: 0.3s ease-in;

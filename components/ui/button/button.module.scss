@@ -1,0 +1,155 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  @include subtitle;
+  font-family: inherit;
+  transition: background-color $transition;
+
+  .btn__prepend_icon {
+    margin-right: 16px;
+    font-size: 26px;
+  }
+
+  .btn__append_icon {
+    margin-left: 16px;
+    font-size: 26px;
+  }
+
+  &__green {
+    background-color: $green;
+    box-shadow: $btn-shadow-green;
+
+    &:before {
+      border-color: $green;
+    }
+
+    &:hover {
+      background-color: $green-dark;
+
+      &:before {
+        border-color: $green-dark;
+      }
+    }
+
+    &:active {
+      background-color: $green;
+
+      &:before {
+        border-color: $green;
+      }
+    }
+  }
+
+  &__white {
+    background-color: $white;
+    box-shadow: $btn-shadow-white;
+
+    &:before {
+      border-color: $white;
+    }
+
+    &:hover {
+      background-color: $gray-light;
+
+      &:before {
+        border-color: $gray-light;
+      }
+    }
+
+    &:active {
+      background-color: $white;
+
+      &:before {
+        border-color: $white;
+      }
+    }
+  }
+
+  &__gray {
+    background-color: $gray-light;
+    box-shadow: $btn-shadow-gray;
+
+    &:before {
+      border-color: $gray-light;
+    }
+
+    &:hover {
+      background-color: $white;
+
+      &:before {
+        border-color: $white;
+      }
+    }
+
+    &:active {
+      background-color: $gray-light;
+
+      &:before {
+        border-color: $gray-light;
+      }
+    }
+  }
+
+  &__small {
+    padding: 0 vw(20px);
+    height: vw(48px);
+    border-radius: vw(15px);
+    @include button-small;
+
+    .btn__prepend_icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    .btn__append_icon {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &__normal {
+    padding: 0 vw(30px);
+    height: vw(54px);
+    border-radius: vw(20px);
+  }
+
+  &__rounded {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    box-shadow: none;
+
+    .btn__prepend_icon {
+      margin-right: 0;
+    }
+
+    &.btn__small {
+      width: 36px;
+      height: 36px;
+
+      &:before {
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+      }
+    }
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      transition: $transition;
+    }
+  }
+}

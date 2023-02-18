@@ -1,0 +1,80 @@
+@mixin h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: vw(84px);
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+
+@mixin h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: vw(56px);
+  line-height: vw(64px);
+  letter-spacing: -0.02em;
+}
+
+@mixin h3 {
+  font-style: normal;
+  font-size: vw(46px);
+  line-height: vw(48px);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@mixin h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: vw(32px);
+  line-height: vw(40px);
+  letter-spacing: -0.02em;
+}
+
+@mixin h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: vw(24px);
+  line-height: vw(32px);
+  letter-spacing: -0.02em;
+}
+
+@mixin h6 {
+  font-weight: 600;
+  font-size: vw(20px);
+  line-height: vw(28px);
+}
+
+@mixin body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: vw(18px);
+  line-height: vw(24px);
+}
+
+@mixin subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: vw(16px);
+  line-height: vw(20px);
+}
+
+@mixin small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: vw(14px);
+  line-height: 135.5%;
+}
+
+@mixin button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: vw(16px);
+  line-height: 1;
+}
+
+@mixin button-small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: vw(14px);
+  line-height: 1;
+}

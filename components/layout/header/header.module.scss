@@ -1,0 +1,87 @@
+.header {
+  position: absolute;
+  top: vw(60px);
+  width: 100%;
+  z-index: 10;
+
+  :global(.row) {
+    align-items: center;
+  }
+
+  &_logo {
+    display: flex;
+    margin-top: vw(-10px);
+    width: vw(150px);
+  }
+
+  &_contact {
+    margin-left: vw(40px);
+  }
+
+  &_menu {
+    margin-right: vw(77px);
+    margin-left: auto;
+    color: $gray-light;
+    display: flex;
+    align-items: center;
+
+    &_item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: vw(25px);
+      }
+
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: vw(2px);
+        background: currentColor;
+        content: "";
+        transition: $transition;
+      }
+
+      &__active {
+        &:after {
+          width: 100%;
+        }
+      }
+
+      a {
+        padding: vw(10px);
+        transition: $transition;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-child {
+      padding: vw(25px) vw(30px);
+      background: $gray-light;
+      box-shadow: 0 vw(20px) vw(30px) rgba(10, 9, 3, 0.2);
+      border-radius: vw(20px);
+      margin-top: vw(10px);
+      color: $dark;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translate(-#{vw(20px)}, 100%);
+      width: vw(240px);
+
+      &-item {
+        @include small;
+
+        &:not(:last-child) {
+          margin-bottom: vw(12px);
+        }
+
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$vw-viewport-desktop: 1920;
+$vw-viewport-laptop: 1280;
+$vw-viewport-tablet: 768;
+$vw-viewport-mobile: 375;
+
+@function vw($font, $media: "desktop") {
+  $size: $vw-viewport-desktop;
+
+  @if ($media == "laptop") {
+    $size: $vw-viewport-laptop;
+  }
+  @if ($media == "tablet") {
+    $size: $vw-viewport-tablet;
+  }
+  @if ($media == "mobile") {
+    $size: $vw-viewport-mobile;
+  }
+
+  $vw-context: $size * 0.01 * 1px;
+  @return calc($font / $vw-context) * 1vw;
+  @return $font;
+}
